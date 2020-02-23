@@ -24,4 +24,12 @@ class LastDigitTest {
   assertEquals(expected, lastDigit.stringTimes(input, input2));
 
   }
+
+  @Test
+  void frontTimes() {
+    String input = "chocolate";
+   int input2 = 3;
+   String expected = "chochocho";
+   assertEquals(expected, lastDigit.frontTimes(input,input2));
+  }
 }
