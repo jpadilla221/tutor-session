@@ -14,4 +14,14 @@ class LastDigitTest {
   void lastDigit() {
     assertEquals(true, lastDigit.lastDigit(testVarA, testVarB));
   }
+
+
+  @Test
+  void stringTimes() {
+  String input = "roger";
+  int input2 = 2;
+  String expected = "rogerroger";
+  assertEquals(expected, lastDigit.stringTimes(input, input2));
+
+  }
 }
