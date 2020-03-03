@@ -1,7 +1,7 @@
 public class LastDigit {
 
   /*  Given two non-negative int values, return true if they have the same last digit,
-  such as with 27 and 57. Note that the % "mod" operator computes remainders, so 17 % 10 is 7.*/
+  such as with 27 and 57. Note that the % "mod" operator computes remainders, so 17 % 10 is 7.*//*
   public boolean lastDigit(int a, int b) {
     int lastDigitOfA = a % 10;
     int lastDigitOfB = b % 10;
@@ -13,7 +13,7 @@ public class LastDigit {
   }
 
 
-  /* Given a string and a non-negative int n, return a larger string that is n copies of the original string.*/
+  *//* Given a string and a non-negative int n, return a larger string that is n copies of the original string.*//*
   public String stringTimes(String str, int n) {
 
     String output = "";
@@ -23,8 +23,8 @@ public class LastDigit {
     return output;
   }
 
-  /*   Given a string and a non-negative int n, we'll say that the front of the string is the first 3 chars,*/
-  /* or whatever is there if the string is less than length 3. Return n copies of the front;*/
+  *//*   Given a string and a non-negative int n, we'll say that the front of the string is the first 3 chars,*//*
+  *//* or whatever is there if the string is less than length 3. Return n copies of the front;*//*
   public String frontTimes(String str, int n) {
 
     String output = "";
@@ -40,7 +40,24 @@ public class LastDigit {
       output = output + firstThreeChar;
     }
     return output;
+  }*/
+//  Given a string, return a string where for every char in the original, there are two chars.
+
+  public String doubleChar(String str) {
+    String solution = "";
+    if (str .equals("")) {
+      return str;
+    }
+    for (int i = 0; i < str.length(); i++) {
+      char atPosition = str.charAt(i);
+      solution = solution + str.charAt(i) + str.charAt(i);
+
+    }
+    return solution;
   }
+
 }
+
+
 
 

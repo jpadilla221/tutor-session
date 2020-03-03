@@ -3,7 +3,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 class LastDigitTest {
-
+/*
   int testVarA = 4;
   int testVarB = 24;
 
@@ -31,5 +31,12 @@ class LastDigitTest {
    int input2 = 3;
    String expected = "chochocho";
    assertEquals(expected, lastDigit.frontTimes(input,input2));
+  }*/
+LastDigit lastDigit = new LastDigit();
+  @Test
+  void doubleChar() {
+    String input = "Happy";
+    String expected = "HHaappppyy";
+    assertEquals(expected, lastDigit.doubleChar(input));
   }
 }
